@@ -11,6 +11,7 @@ Tech Stack:
 
 This endpoint will be used to create a raw transaction that spends from a P2PKH address and that supports paying to mulitple addresses (either P2PKH or P2SH). The endpoint should return a transaction that spends from the source address and that pays to the output addresses.
 
+```
 URL: /payment_transactions Method: POST
   Request body (dictionary):
   source_address (string): The address to spend from
@@ -20,6 +21,7 @@ Response body (dictionary):
   txid (string): The transaction id
   vout (int): The output number
   script_pub_key (string): The script pub key amount (int): The amount in SAT
+```
 
 ## How to run and test it?
 In the main directory we use `docker-compose up` and it will spin up our microservice.
